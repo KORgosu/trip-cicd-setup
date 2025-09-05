@@ -1,0 +1,81 @@
+# Docker 관련
+.dockerignore
+
+# Jenkins 데이터 디렉토리
+jenkins_home/
+!jenkins_home/.gitkeep
+
+# PostgreSQL 데이터 디렉토리
+postgresql_data/
+
+# SonarQube 데이터 및 로그
+sonarqube_data/
+sonarqube_logs/
+sonarqube_extensions/
+
+# 로그 파일
+*.log
+logs/
+
+# 환경 변수 파일
+.env
+.env.local
+.env.*.local
+
+# IDE 설정 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 생성 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# 압축 파일
+*.zip
+*.tar.gz
+*.rar
+
+# Node.js (만약 사용한다면)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Java (Jenkins 관련)
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# Python (만약 사용한다면)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 기타
+*.pid
+*.seed
+*.pid.lock
